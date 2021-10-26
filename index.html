@@ -18,10 +18,91 @@
     <header>
         <nav class="navbar">
             <div class="container flex">
-                <div class=navbar-left-content>
-                    <a href="/">
+                <div class="navbar-left-content">
+                    <a href="/" class="navbar__left-toggler-open flex">
                         <img class="riot-icon" src="images/riot-icon.png">
+                        <i class="fas fa-caret-down"></i>
+                        <div class="vertical-line">
+                        </div>
                     </a>
+
+
+                    <div class="navbar__left-collapse">
+                        <div class="navbar__left-collapse__header flex">
+                            <a href="/">
+                                <img class="riot-logo" src="images/riot-logo-black.png">
+                            </a>
+                            <button type="button" class="navbar__left-toggler-close">
+                                <i class="fas fa-times">
+                                </i>
+                            </button>
+                        </div>
+                        <div class="navbar-nav__left">
+                            <h1>RIOT GAMES</h1>
+                            <div class="nav__left-item">
+                                <a href="/" class="nav__left-link">
+                                    <img src="images/left1.jpeg">
+                                    <h4>
+                                        Introducing Riot Mobile, a mobile companion that helps you stay connected with
+                                        players and find the content and experiences you care about most.
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="nav__left-item">
+                                <a href="/" class="nav__left-link">
+                                    <img src="images/left2.jpeg">
+                                    <h4>
+                                        Learn more about Arcane, a new animated series from the world of League of
+                                        Legends.
+                                    </h4>
+
+                                </a>
+                            </div>
+                            <div class="nav__left-game">
+                                <a href="/" class="nav__left-link">
+                                    <img src="images/left3.jpeg">
+                                    <h4>
+                                        Play Now
+                                    </h4>
+                                    <i class="fab fa-windows"></i>
+                                    <i class="fab fa-apple"></i>
+                                    <i class="fas fa-mobile"></i>
+                                </a>
+                            </div>
+                            <div class="nav__left-game">
+                                <a href="/" class="nav__left-link">
+                                    <img src="images/left4.jpeg">
+                                    <h4>
+                                        Play Now
+                                    </h4>
+                                    <i class="fas fa-mobile"></i>
+                                    <i class="fab fa-windows"></i>
+                                    <i class="fab fa-apple"></i>
+                                </a>
+                            </div>
+                            <div class="nav__left-game">
+                                <a href="/" class="nav__left-link">
+                                    <img src="images/left5.jpeg">
+                                    <h4>
+                                        Play Now
+                                    </h4>
+                                    <i class="fab fa-windows"></i>
+                                </a>
+                            </div>
+                            <div class="nav__left-game">
+                                <a href="/" class="nav__left-link">
+                                    <img src="images/left6.jpeg">
+                                    <h4>
+                                        Play Now
+                                    </h4>
+                                    <i class="fas fa-mobile"></i>
+                                    <i class="fab fa-windows"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class=navbar-center-content>
                     <a href="/">
@@ -44,26 +125,26 @@
                         </button>
                     </div>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">who we are
-                                <span class="nav-item-dropdown">
+                    <ul class="navbar-nav__right">
+                        <li class="nav__right-item">
+                            <a href="/" class="nav__right-link">who we are
+                                <span class="nav__right-item-dropdown">
                                     <i class="fas fa-caret-right"></i>
                                     <i class="fas fa-caret-down"></i>
                                 </span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">work with us
-                                <span class="nav-item-dropdown">
+                        <li class="nav__right-item">
+                            <a href="/" class="nav__right-link">work with us
+                                <span class="nav__right-item-dropdown">
                                     <i class="fas fa-caret-right"></i>
                                     <i class="fas fa-caret-down"></i>
 
                                 </span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">news</a>
+                        <li class="nav__right-item">
+                            <a href="/" class="nav__right-link">news</a>
                         </li>
                     </ul>
                 </div>
@@ -120,7 +201,7 @@
             </div>
         </div>
         <div class="widget">
-            <div class="our-games">
+            <div class="whats-happening">
                 <div class="whats-happening__title-wrapper">
                     <div class="whats-happening__title">
                         What's happening?
@@ -130,7 +211,7 @@
                     <div class="whats-happening__hero-wrapper">
                         <a class="whats-happening__hero-card">
                             <div class="whats-happening__hero-image">
-                                <img src="images/jinx.jpg">
+                                <img class="whats-happening__hero-image" src="images/jinx.jpg">
                             </div>
                             <div class="whats-happening__hero-content">
                                 <h3 class="whats-happening__hero-title">
@@ -142,82 +223,90 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <ul class="whats-happening__articles">
-                    <li class="whats-happening__article">
-                        <a class="whats-happening__article-card">
-                            <div class="whats-happening__article-title-wrapper">
-                                <h3 class="whats-happening__article-title">
-                                    /Dev Teamfight Tactics: Reckoning Learnings
-                                </h3>
-                                <div class="whats-happening__article-category">
-                                    News
+                    <ul class="whats-happening__articles">
+                        <li class="whats-happening__article">
+                            <a class="whats-happening__article-card">
+                                <div class="whats-happening__article-title-wrapper">
+                                    <h3 class="whats-happening__article-title">
+                                        /Dev Teamfight Tactics: Reckoning Learnings
+                                    </h3>
+                                    <div class="whats-happening__article-category">
+                                        News
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="whats-happening__article-image"
-                                style="background-image:url('images/dev-tft.jpeg')">
-                            </div>
-                            <div class="whats-happening__article-logo"
-                                style="background-image:url(images/riot-icon-white.png)">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="whats-happening__article">
-                        <a class="whats-happening__article-card">
-                            <div class="whats-happening__article-title-wrapper">
-                                <h3 class="whats-happening__article-title">
-                                    Naz Aletaha Named Global Head of LoL Esports
-                                </h3>
-                                <div class="whats-happening__article-category">
-                                    News
+                                <div class="whats-happening__article-image"
+                                    style="background-image:url('images/dev-tft.jpeg')">
                                 </div>
-                            </div>
-                            <div class="whats-happening__article-image"
-                                style="background-image:url(images/lol-esport.jpg)">
-                            </div>
-                            <div class="whats-happening__article-logo"
-                                style="background-image:url(images/riot-icon-white.png)">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="whats-happening__article">
-                        <a class="whats-happening__article-card">
-                            <div class="whats-happening__article-title-wrapper">
-                                <h3 class="whats-happening__article-title">
-                                    Riot's Global Service Month 2021
-                                </h3>
-                                <div class="whats-happening__article-category">
-                                    News
+                                <div class="whats-happening__article-logo"
+                                    style="background-image:url(images/riot-icon-white.png)">
                                 </div>
-                            </div>
-                            <div class="whats-happening__article-image"
-                                style="background-image:url(images/global-service.jpg)">
-                            </div>
-                            <div class="whats-happening__article-logo"
-                                style="background-image:url(images/riot-icon-white.png)">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="whats-happening__article">
-                        <a class="whats-happening__article-card">
-                            <div class="whats-happening__article-title-wrapper">
-                                <h3 class="whats-happening__article-title">
-                                    Riot's President of Games Helps to Inspire the Next Generation
-                                </h3>
-                                <div class="whats-happening__article-category">
-                                    News
+                            </a>
+                        </li>
+                        <li class="whats-happening__article">
+                            <a class="whats-happening__article-card">
+                                <div class="whats-happening__article-title-wrapper">
+                                    <h3 class="whats-happening__article-title">
+                                        Naz Aletaha Named Global Head of LoL Esports
+                                    </h3>
+                                    <div class="whats-happening__article-category">
+                                        News
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="whats-happening__article-image"
-                                style="background-image:url(images/inspire.jpg)">
-                            </div>
-                            <div class="whats-happening__article-logo">
-                                <img src="images/riot-icon-white.png">
-                            </div>
+                                <div class="whats-happening__article-image"
+                                    style="background-image:url(images/lol-esport.jpg)">
+                                </div>
+                                <div class="whats-happening__article-logo"
+                                    style="background-image:url(images/riot-icon-white.png)">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="whats-happening__article">
+                            <a class="whats-happening__article-card">
+                                <div class="whats-happening__article-title-wrapper">
+                                    <h3 class="whats-happening__article-title">
+                                        Riot's Global Service Month 2021
+                                    </h3>
+                                    <div class="whats-happening__article-category">
+                                        News
+                                    </div>
+                                </div>
+                                <div class="whats-happening__article-image"
+                                    style="background-image:url(images/global-service.jpg)">
+                                </div>
+                                <div class="whats-happening__article-logo"
+                                    style="background-image:url(images/riot-icon-white.png)">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="whats-happening__article">
+                            <a class="whats-happening__article-card">
+                                <div class="whats-happening__article-title-wrapper">
+                                    <h3 class="whats-happening__article-title">
+                                        Riot's President of Games Helps to Inspire the Next Generation
+                                    </h3>
+                                    <div class="whats-happening__article-category">
+                                        News
+                                    </div>
+                                </div>
+                                <div class="whats-happening__article-image"
+                                    style="background-image:url(images/inspire.jpg)">
+                                </div>
+                                <div class="whats-happening__article-logo">
+                                    <img src="images/riot-icon-white.png">
+                                </div>
 
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="whats-happening__buttons-mobile flex">
+                    <a href="/" class="whats-happening__button-mobile">
+                        <span>
+                            See more
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -231,7 +320,7 @@
                 <ul class="our-games__cards">
                     <li class="our-games__card">
                         <a class="our-games__card-image" href="/">
-                            <img src="images/jinx1.png">
+                            <img class="our-games__card-image__primary" src="images/jinx1.png">
                         </a>
                         <div class="our-games__card-logo flex">
                             <img src="images/lol.png">
@@ -240,14 +329,14 @@
                     </li>
                     <li class="our-games__card">
                         <a class="our-games__card-image" href="/">
-                            <img src="images/riven.png">
+                            <img class="our-games__card-image__primary" src="images/riven.png">
                         </a>
                         <div class="our-games__card-logo flex">
                             <img src="images/valorant.png">
                         </div>
 
                     </li>
-                    <li class="our-games__card">
+                    <li class="our-games__card our-games__card-image__secondary">
                         <a class="our-games__card-image" href="/">
                             <img src="images/tft.jpg">
                         </a>
@@ -256,7 +345,7 @@
                         </div>
 
                     </li>
-                    <li class="our-games__card">
+                    <li class="our-games__card our-games__card-image__secondary">
                         <a class="our-games__card-image" href="/">
                             <img src="images/zigg.png">
 
@@ -266,7 +355,7 @@
 
                         </a>
                     </li>
-                    <li class="our-games__card">
+                    <li class="our-games__card our-games__card-image__secondary">
                         <a class="our-games__card-image" href="/">
                             <img src="images/ire.png">
                         </a>
@@ -275,7 +364,7 @@
                         </div>
 
                     </li>
-                    <li class="our-games__card">
+                    <li class="our-games__card our-games__card-image__secondary">
                         <a class="our-games__card-image" href="/">
                             <img src="images/hex.png">
                         </a>
@@ -284,7 +373,7 @@
                         </div>
 
                     </li>
-                    <li class="our-games__card">
+                    <li class="our-games__card our-games__card-image__secondary">
                         <a class="our-games__card-image" href="/">
                             <img src="images/viego.png">
                         </a>
@@ -323,7 +412,8 @@
                     </a>
                 </div>
                 <div class="careers__image">
-                    <img src="images/anie.png">
+                    <img class="careers__image1" src="images/anie1.png">
+                    <img class="careers__image2" src="images/anie.png">
                 </div>
 
             </div>
@@ -333,116 +423,124 @@
     <footer>
         <div class="footer">
             <div class="footer__container">
-                <div class="footer-links-1">
-                    <ul class="flex">
-                        <li>
-                            <a href="#">
-                                Press
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Security
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Legal
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Leadership
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Candidate Privacy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Terms of service
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Privacy notice
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Player support
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                E-verify
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Accessibility
-                            </a>
-                        </li>
+                <div class="footer__container-links">
+                    <div class="footer-links logo flex">
+                        <img class="footer-logo" src="images/riot-icon-gray.png">
+                    </div>
+                    <div class="footer-links-1">
+                        <ul class="footer-link flex">
+                            <li>
+                                <a href="/">
+                                    Press
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    Security
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    Legal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    Leadership
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    Candidate Privacy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    Terms of service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    Privacy notice
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    Player support
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    E-verify
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    Accessibility
+                                </a>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </div>
+                    <div class="footer-links-2">
+                        <ul class="footer-link flex">
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-facebook-f">
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-twitter">
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-linkedin">
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-links-2">
-                    <ul class="flex">
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-facebook-f">
-
-                                </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-twitter">
-
-                                </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-linkedin">
-
-                                </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-
-                    </ul>
+                <div class="footer__container-texts">
+                    <div class="footer-text flex">
+                        <a href="/">
+                            <i class="fas fa-globe"></i>
+                            English +
+                        </a>
+                        <a href="/">
+                            <span>
+                                |
+                            </span>
+                            Cookie Preferences
+                        </a>
+                        <a href="/">
+                            <span>
+                                |
+                            </span>
+                            © 2021 Riot Games, Inc. All Rights Reserved.
+                        </a>
+                    </div>
+                    <div class="to-surface">
+                        <a href="/">
+                            TO THE SURFACE
+                            <i class="fas fa-caret-up"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-text flex">
-                    <a href="#">
-                        <i class="fas fa-globe"></i>
-                        English +
-                    </a>
-                    <a href="#">
-                        <span>
-                            |
-                        </span>
-                        Cookie Preferences
-                    </a>
-                    <a href="#">
-                        <span>
-                            |
-                        </span>
-                        © 2021 Riot Games, Inc. All Rights Reserved.
-                    </a>
-                </div>
-                <div class="to-surface">
-                    <a href="#">
-                        TO THE SURFACE
-                        <i class="fas fa-caret-up"></i>
-                    </a>
-                </div>
+
             </div>
         </div>
     </footer>

@@ -2,6 +2,8 @@ const navTogglerOpen = document.querySelector(".navbar-toggler-open");
 const navTogglerClose = document.querySelector(".navbar-toggler-close");
 const navCollapse = document.querySelector(".navbar-collapse");
 const search = document.querySelector(".search-icon-group");
+const scrollToTopBtn = document.querySelector(".to-surface");
+const rootElement = document.documentElement;
 
 navTogglerOpen.addEventListener("click", () => {
   navCollapse.classList.add("show-navbar");
@@ -13,6 +15,13 @@ navTogglerClose.addEventListener("click", () => {
   search.classList.remove("show-search");
 });
 
+scrollToTopBtn.addEventListener("click", () => {
+  console.log(1)
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
 // window.addEventListener('scroll', () => {
 //   console.log(this)

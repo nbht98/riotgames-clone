@@ -64,6 +64,8 @@ img {
   justify-content: center;
 }
 
+/* navbar */
+
 .navbar {
   background-color: var(--nav-color);
   color: #fff;
@@ -192,6 +194,8 @@ img {
   transition: var(--trans);
   right: 70px;
 }
+
+/* main */
 
 .hero-new {
   position: relative;
@@ -415,6 +419,63 @@ img {
 .button-explore-careers span {
   font-size: 20px;
   color: #fff;
+}
+
+/* footer */
+footer {
+  background-color: #252423;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #656462;
+}
+
+.footer-links-1 ul,
+.footer-links-2 {
+  flex-wrap: wrap;
+}
+
+.footer-links-1 {
+  margin: 20px;
+}
+
+.footer-links-1 ul li {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.footer-links-2 ul li {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.footer-text {
+  padding: 30px;
+  border-top: 1px solid #323131;
+  border-bottom: 1px solid #323131;
+}
+
+.footer-text a {
+  font-size: 12px;
+}
+
+.footer-text a span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.to-surface {
+  margin-top: 20px;
+}
+
+/* scroll behavior smooth */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @media (min-width: 1024px) {

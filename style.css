@@ -446,9 +446,11 @@ img {
   border-radius: 8px;
 }
 
+.whats-happening__buttons,
 .whats-happening__buttons-mobile {
   margin-top: 5px;
 }
+.whats-happening__button,
 .whats-happening__button-mobile {
   background-color: #222222;
   border-radius: 6px;
@@ -464,6 +466,9 @@ img {
 .whats-happening__hero-image {
   width: 100%;
   height: 100%;
+}
+.whats-happening__buttons {
+  display: none;
 }
 
 .our-games__card {
@@ -486,15 +491,20 @@ img {
   text-align: center;
 }
 
+.careers__jobs {
+  display: flex;
+  width: 100%;
+}
+
 .careers__jobs__count {
   background-color: #dfdede;
   border-radius: 8px;
   text-decoration: none;
   padding: 16px;
   font-weight: 800;
-  height: 100%;
   flex-direction: column;
   flex: 1 1 250px;
+  justify-content: flex-start;
 }
 
 .careers__jobs__count:first-child {
@@ -508,6 +518,7 @@ img {
 .careers__content {
   margin-top: 20px;
   padding: 50px;
+  max-width: 600px;
 }
 .careers__content p {
   font-size: 20px;
@@ -528,6 +539,7 @@ img {
 .careers__jobs__count {
   position: relative;
   margin-bottom: 40px;
+  color: #656462;
 }
 
 .button-explore-careers {
@@ -612,7 +624,6 @@ footer a {
   height: 50px;
 }
 
-
 .footer {
   width: 100%;
 }
@@ -628,6 +639,41 @@ footer a {
 @media screen and (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 540px) {
+  .whats-happening__article-title,
+  .whats-happening__hero-title {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .whats-happening__article-category {
+    font-size: 14px;
+  }
+
+  .whats-happening__article-card {
+    max-height: 80px;
+  }
+  .whats-happening__article-title-wrapper {
+    margin-right: 100px;
+  }
+  .whats-happening__article-image {
+    width: 120px;
+  }
+  .whats-happening__article-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .careers__content {
+    padding: 20px;
+  }
+  .footer-links-1 .footer-link{
+    flex-direction: column;
   }
 }
 
@@ -667,7 +713,7 @@ footer a {
   }
 
   .whats-happening__article-title-wrapper {
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 40px;
   }
 
@@ -675,11 +721,20 @@ footer a {
     display: none;
   }
 
-  /* .our-games__cards {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-  } */
+  .whats-happening__buttons {
+    display: block;
+    margin: 0;
+  }
+
+  .whats-happening__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .our-games__title {
+    text-align: left;
+  }
 
   .our-games__cards {
     display: flex;
@@ -698,6 +753,8 @@ footer a {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
     width: 100%;
     height: 600px;
+    max-height: 600px;
+    max-width: 50%;
   }
   .careers__image1 {
     display: none;
@@ -714,11 +771,11 @@ footer a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* box-sizing: border-box; */
     flex-direction: row;
   }
+
   .careers__content {
-    padding: 20px;
+    margin-left: auto;
   }
 
   .footer-logo {
@@ -806,8 +863,7 @@ footer a {
     align-items: center;
   }
 }
-/* sizes="(min-width: 1890px) 855px,(min-width: 1280px) calc(50vw - 90px),(min-width: 960px) calc(50vw - 50px),calc(100vw - 40px)" */
-/* sizes="(min-width: 1890px) 564px,(min-width: 1280px) calc(33.33vw - 66.6px),(min-width: 960px) calc(50vw - 60px),calc(100vw - 40px)" */
+
 @media (min-width: 1300px) {
   .whats-happening__wrapper {
     display: flex;
@@ -825,7 +881,7 @@ footer a {
     display: inline-block;
   }
   .whats-happening__article-title-wrapper {
-    font-size: 14px;
+    font-size: 18px;
     margin-right: 200px;
   }
   .whats-happening__article {
@@ -860,60 +916,4 @@ footer a {
     max-height: 600px;
     object-fit: cover;
   }
-
-
 }
-
-/* @media (min-width: 1024px) {
-  .navbar-toggler-close,
-  .navbar-toggler-open,
-  .navbar-collapse__header,
-  .fa-caret-right,
-  .navbar-toggler-open {
-    display: none !important;
-  }
-
-  .riot-logo {
-    display: none;
-  }
-  .riot-text {
-    display: block;
-    height: 70px;
-  }
-  .navbar-collapse {
-    width: 100%;
-    right: 0;
-    position: relative;
-    background-color: transparent;
-    border-top: none;
-  }
-  .nav__right-item {
-    background-color: transparent;
-    border-bottom: none;
-  }
-  .nav__right-link {
-    font-size: 12px;
-    margin-top: 5px;
-    margin-right: 30px;
-  }
-  .navbar-nav-right {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav__right-item-dropdown {
-    position: absolute;
-    right: -45px;
-    top: 18px;
-  }
-
-  .search-icon-group {
-    width: 170px;
-    height: 35px;
-    background-color: var(--search-color);
-    border-radius: 16px;
-    position: fixed;
-    right: 40px;
-    top: 15px;
-  }
-} */

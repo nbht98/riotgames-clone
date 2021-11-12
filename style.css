@@ -1,15 +1,13 @@
 :root {
   --didact-gothic: "Didact Gothic", sans-serif;
-  --body-color: #252423;
   --trans: all 0.3s ease-in-out;
-  --nav-color: #111111;
-  --nav-toggler-color: #212121;
-  --button-color: #c7c7c7;
-  --nav__right-item-color: #333333;
-  --text-color: #f9f9f9;
-  --carret-right: #7e7e7e;
-  --search-color: #2b2a29;
-  --color-bg-gradient: rgba(186, 137, 100, 0.2);
+  --black:  #111111;
+  --black-nav-toggler: #212121;
+  --white-button: #c7c7c7;
+  --black-nav__right-item: #333333;
+  --grey-caret: #7e7e7e;
+  --black-search: #2b2a29;
+  --white-text: #f4f4f4;
 }
 
 * {
@@ -28,7 +26,7 @@ body {
   font-size: 16px;
   font-family: var(--didact-gothic);
   font-weight: 800;
-  background-color: #111111;
+  background-color: var(--black);
 }
 
 .riot-logo {
@@ -67,7 +65,7 @@ img {
 /* navbar */
 
 .navbar {
-  color: #fff;
+  color: var(--white-text);
   text-align: center;
   position: fixed;
   top: 0;
@@ -77,7 +75,7 @@ img {
 }
 
 .navbar-color {
-  background-color: var(--nav-color);
+  background-color: var(--black);
   border-bottom: 2px solid rgba(51, 51, 51, 0.25);
 }
 
@@ -103,7 +101,7 @@ img {
 }
 
 .search-color {
-  background-color: var(--search-color);
+  background-color: var(--black-search);
   border: none;
 }
 
@@ -111,7 +109,7 @@ img {
   background-color: transparent;
   border-style: hidden;
   font-size: 10px;
-  color: #fff;
+  color: var(--white-text);
   text-transform: uppercase;
   font-weight: 700;
   width: 100px;
@@ -122,7 +120,7 @@ img {
   background-color: transparent;
   border-style: hidden;
   font-size: 15px;
-  color: #fff;
+  color: var(--white-text);
 }
 
 .navbar-subtoggler-close-1,
@@ -132,11 +130,11 @@ img {
   font-size: 12px;
   width: 32px;
   height: 32px;
-  background-color: var(--nav-toggler-color);
+  background-color: var(--black-nav-toggler);
   cursor: pointer;
   border-radius: 50%;
   border: none;
-  color: var(--button-color);
+  color: var(--white-button);
   transition: var(--trans);
 }
 
@@ -146,7 +144,7 @@ img {
   right: -315px;
   top: 0;
   width: 315px;
-  background-color: var(--nav-toggler-color);
+  background-color: var(--black-nav-toggler);
   height: 100%;
   border-top: 2px solid #262626;
 }
@@ -154,7 +152,7 @@ img {
 .navbar-subcollapse__header,
 .navbar-collapse__header {
   height: 90px;
-  background-color: var(--nav-color);
+  background-color: var(--black);
   justify-content: space-between;
   padding: 15px;
 }
@@ -164,7 +162,7 @@ img {
 }
 
 .navbar-subcollapse__header span {
-  color: #fff;
+  color: var(--white-text);
   margin-left: 20px;
 }
 .navbar-subcollapse__header a i {
@@ -188,17 +186,10 @@ img {
   height: 40px;
 }
 
-.nav__right-item {
-  height: 63px;
-  text-align: left;
-  background-color: var(--nav__right-item-color);
-  border-bottom: 1px solid var(--nav-color);
-}
-
 .nav__right-link {
   position: relative;
   display: block;
-  color: var(--text-color);
+  color: var(--white-text);
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
@@ -214,15 +205,15 @@ img {
 .nav__right-item {
   height: 63px;
   text-align: left;
-  background-color: var(--nav__right-item-color);
-  border-bottom: 1px solid var(--nav-color);
+  background-color: var(--black-nav__right-item);
+  border-bottom: 1px solid var(--black);
 }
 
 .nav__right-sublink,
 .nav__right-link {
   position: relative;
   display: block;
-  color: var(--text-color);
+  color: var(--white-text);
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
@@ -239,7 +230,7 @@ img {
   right: 0;
   margin-right: 30px;
   font-size: 15px;
-  color: var(--carret-right);
+  color: var(--grey-caret);
 }
 
 .show-navbar {
@@ -353,7 +344,7 @@ img {
   position: relative;
   height: 550px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-  color: #fff;
+  color: var(--white-text);
 }
 
 .hero-new__content-inner {
@@ -388,7 +379,7 @@ img {
 .button-learn-more {
   width: 275px;
   font-size: 32px;
-  color: var(--nav-color);
+  color: var(--black);
   font-weight: 700;
   background: linear-gradient(135deg, #ba8964 0, #d1ac90 100%);
   box-shadow: 0 10px 45px -10px rgba(186, 137, 100, 0.15),
@@ -407,7 +398,7 @@ img {
 }
 
 .learn-more {
-  background-color: var(--nav-color);
+  background-color: var(--black);
   border-style: none;
   font-size: 20px;
   width: 40px;
@@ -418,7 +409,7 @@ img {
 }
 
 .widget {
-  color: var(--text-color);
+  color: var(--white-text);
   line-height: 1.5;
   margin: auto;
   padding: 20px;
@@ -477,7 +468,7 @@ img {
   right: 10px;
   width: 35px;
   height: 35px;
-  background-color: var(--nav-color);
+  background-color: var(--black);
   background-size: cover;
   border-radius: 50%;
 }
@@ -517,7 +508,7 @@ img {
   font-weight: 800;
   min-width: auto;
   font-size: 13px;
-  color: #fff;
+  color: var(--white-text);
   padding: 10px 20px;
   letter-spacing: 2px;
 }
@@ -611,7 +602,7 @@ img {
 }
 .button-explore-careers span {
   font-size: 20px;
-  color: #fff;
+  color: var(--white-text);
 }
 
 /* footer */
@@ -714,7 +705,7 @@ footer a {
 .footer-text a:hover,
 .footer-links-1 ul li a:hover {
   text-decoration: underline;
-  color: #fff;
+  color: var(--white-text);
 }
 
 /* scroll behavior smooth */
@@ -776,7 +767,7 @@ footer a {
     position: relative;
     height: 800px;
     clip-path: none;
-    color: #fff;
+    color: var(--white-text);
   }
 
   .hero-new__content {
@@ -1056,7 +1047,7 @@ footer a {
   }
 
   .nav__subright-item {
-    background-color: #111111;
+    background-color: var(--black);
     border-bottom: none;
     width: 200px;
     height: auto;
